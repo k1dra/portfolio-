@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+Welcome to the demo of my C++ Tic-Tac-Toe game running in the terminal.
+
+00:00:10.000 --> 00:00:25.000
+Here, Player X and Player O take turns entering board coordinates to make their moves.
+
+00:00:25.000 --> 00:00:35.000
+The program validates each move to prevent overwriting existing cells.
+
+00:00:35.000 --> 00:00:45.000
+Finally, the game checks for a winning line or a draw and displays the result.
