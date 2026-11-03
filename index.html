@@ -20,7 +20,14 @@
             <figcaption>Kidus Girma — Software Engineering Student</figcaption>
         </figure>
         <p>Software Engineering student and aspiring web developer.</p>
-
+        <button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+        <dialog id="hireDialog">
+            <h2>Available for internships</h2>
+            <p>I am available for internships and freelance web projects from June 2027.</p>
+            <p><a href="#contact">Send me a message</a> or <a href="files/CV - Kidus Girma.pdf" download>download my
+                    CV</a>.</p>
+            <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+        </dialog>
         <nav>
             <a href="#about">About</a> |
             <a href="#skills">Skills</a> |
@@ -70,7 +77,35 @@
                 <li>C++</li>
                 <li>Git &amp; GitHub</li>
                 <li>Python</li>
+                <li>SQL</li>
+                <li>JAVA</li>
             </ul>
+            <h3>Skill Levels</h3>
+            <p>
+                <label for="lvl-html">HTML &amp; CSS</label>
+                <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+            </p>
+            <p>
+                <label for="lvl-cpp">C++</label>
+                <meter id="lvl-cpp" value="0.75" min="0" max="1">75%</meter>
+            </p>
+            <p>
+                <label for="lvl-python">Python</label>
+                <meter id="lvl-python" value="0.5" min="0" max="1">70%</meter>
+            </p>
+            <p>
+                <label for="lvl-js">JavaScript</label>
+                <meter id="lvl-js" value="0.3" min="0" max="1" low="0.3" high="0.7" optimum="1">30%</meter>
+            </p>
+            <p>
+                <label for="lvl-sql">SQL</label>
+                <meter id="lvl-sql" value="0.4" min="0" max="1" low="0.3" high="0.7" optimum="1">30%</meter>
+            </p>
+            <p>
+                <label for="lvl-Java">Java</label>
+                <meter id="lvl-Java" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">30%</meter>
+            </p>
+
 
             <h3>Learning Roadmap</h3>
             <ol>
@@ -125,6 +160,10 @@
             <h2>Education</h2>
             <h3>BSc in Software Engineering</h3>
             <p>Addis Ababa Science and Technology University, 2023 - present</p>
+            <p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="40" max="100">40%</progress> 40%
+            </p>
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Academic Record — BSc in Software Engineering</caption>
                 <thead>
@@ -201,9 +240,9 @@
                 <area shape="rect" coords="420,40,580,160" href="mailto:kidrag88@gmail.com" alt="Email">
             </map>
             <h3>Where I study</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.935789991487!2d38.80746962372598!3d8.885562223510417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793723316668!5m2!1sen!2set"
-                width="600" height="300"
-                title="Map of my university campus">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.935789991487!2d38.80746962372598!3d8.885562223510417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793723316668!5m2!1sen!2set"
+                width="600" height="300" title="Map of my university campus">
             </iframe>
             <h3>Send me a message</h3>
             <form action="thank-you.html" method="post" enctype="multipart/form-data">
