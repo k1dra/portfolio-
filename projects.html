@@ -2,76 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects page of Kidus Girma, Software Engineering student and aspiring web developer.">
+    <meta name="keywords" content="Kidus Girma, projects, software engineering, C++, web development">
+    <meta name="author" content="Kidus Girma">
     <title>Projects | Kidus Girma</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <p><a href="index.html">← Back to Home</a></p>
-    
-    <h1>My Projects</h1>
-    <p>Details of every project I have built.</p>
-    
-    <table border="1" cellpadding="8" cellspacing="0">
-        <caption>Project Summary</caption>
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Language</th>
-                <th>Year</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tic-Tac-Toe Game</td>
-                <td>C++</td>
-                <td>2026</td>
-                <td><a href="#tic-tac-toe">View</a></td>
-            </tr>
-            <tr>
-                <td>Small Banking System</td>
-                <td>C++</td>
-                <td>2026</td>
-                <td><a href="#banking-system">View</a></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="3">Total projects</th>
-                <th>2</th>
-            </tr>
-        </tfoot>
-    </table>
+    <header>
+        <nav>
+            <p><a href="index.html">← Back to Home</a></p>
+        </nav>
+    </header>
 
-    <!-- Project 1 -->
-    <h2 id="tic-tac-toe">Tic-Tac-Toe Game</h2>
-    <img src="images/project-tic-tac-toe-game.png" alt="Screenshot of the C++ Tic-Tac-Toe game board in the terminal" width="400" height="250">
-    <p>A C++ console-based Tic-Tac-Toe game featuring interactive player turns and win validation.</p>
-    
-    <h3>How I built it</h3>
-    <ol>
-        <li>Designed a 3x3 grid representation using a 2D array in C++.</li>
-        <li>Implemented a game loop to alternate turns between player X and player O.</li>
-        <li>Added input validation to prevent players from overwriting existing moves.</li>
-        <li>Wrote win-checking algorithms for rows, columns, and diagonals.</li>
-    </ol>
+    <main>
+        <h1>My Projects</h1>
+        <p>Details of every project I have built.</p>
+        
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption>Project Summary</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Language</th>
+                    <th>Year</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tic-Tac-Toe Game</td>
+                    <td>C++</td>
+                    <td>2026</td>
+                    <td><a href="#tic-tac-toe">View</a></td>
+                </tr>
+                <tr>
+                    <td>Small Banking System</td>
+                    <td>C++</td>
+                    <td>2026</td>
+                    <td><a href="#banking-system">View</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total projects</th>
+                    <th>2</th>
+                </tr>
+            </tfoot>
+        </table>
 
-    <h3>Technologies Used</h3>
-    <ul>
-        <li>C++</li>
-        <li>Console Input/Output</li>
-        <li>Git &amp; GitHub for Version Control</li>
-    </ul>
+        <!-- Project 1 -->
+        <article id="tic-tac-toe">
+            <h2>Tic-Tac-Toe Game</h2>
+            <img src="images/project-tic-tac-toe-game.png" alt="Screenshot of the C++ Tic-Tac-Toe game board in the terminal" width="400" height="250">
+            <p>A C++ console-based Tic-Tac-Toe game featuring interactive player turns and win validation.</p>
+            
+            <h3>How I built it</h3>
+            <ol>
+                <li>Designed a 3x3 grid representation using a 2D array in C++.</li>
+                <li>Implemented a game loop to alternate turns between player X and player O.</li>
+                <li>Added input validation to prevent players from overwriting existing moves.</li>
+                <li>Wrote win-checking algorithms for rows, columns, and diagonals.</li>
+            </ol>
 
-    <hr>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>C++</li>
+                <li>Console Input/Output</li>
+                <li>Git &amp; GitHub for Version Control</li>
+            </ul>
+        </article>
 
-    <!-- Project 2 -->
-    <h2 id="banking-system">Small Banking System</h2>
-    <img src="images/banking-system.png" alt="Screenshot of the banking system menu showing account balance and transaction options" width="400" height="250">
-    <p>A C++ console-based application for managing customer accounts, handling secure deposits and withdrawals, and checking real-time balances.</p>
+        <hr>
 
-    <h3>How I built it</h3>
-    <ol>
-        <li>Created structured data types (`struct`) to hold user account information and balances.</li>
-        <li>Implemented a menu-driven loop using `switch` statements to handle choices for deposits, withdrawals, and balance checks.</li>
-        <li>Wrote custom functions to validate
+        <!-- Project 2 -->
+        <article id="banking-system">
+            <h2>Small Banking System</h2>
+            <img src="images/banking-system.png" alt="Screenshot of the banking system menu showing account balance and transaction options" width="400" height="250">
+            <p>A C++ console-based application for managing customer accounts, handling secure deposits and withdrawals, and checking real-time balances.</p>
+
+            <h3>How I built it</h3>
+            <ol>
+                <li>Created structured data types (`struct`) to hold user account information and balances.</li>
+                <li>Implemented a menu-driven loop using `switch` statements to handle choices for deposits, withdrawals, and balance checks.</li>
+                <li>Wrote custom functions to validate input and prevent negative deposits or overdraft transactions.</li>
+                <li>Managed program execution and control flow using procedural logic.</li>
+            </ol>
+
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>C++</li>
+                <li>Procedural Programming</li>
+                <li>Console I/O &amp; Control Structures</li>
+                <li>Git &amp; GitHub for Version Control</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 Kidus Girma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
