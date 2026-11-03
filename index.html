@@ -14,6 +14,7 @@
 
 <body>
     <header>
+        <canvas id="logo" width="120" height="120">Kidus Girma logo</canvas>
         <h1>Kidus Girma</h1>
         <figure>
             <img src="images/profile.jpg" alt="Profile photo of Kidus Girma" width="150">
@@ -42,14 +43,16 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student.
-                I <em>really</em> enjoy building websites with <abbr title="HyperText Markup Language">HTML</abbr>, and my current goal is to
+                I <em>really</em> enjoy building websites with <abbr title="HyperText Markup Language">HTML</abbr>, and
+                my current goal is to
                 <mark>become a full-stack web developer</mark>.
             </p>
             <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i>
                 JavaScript.</p>
-           <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
-            <p>My favourite tag is &lt;main&gt;, because it tells the browser where the important content is &amp; helps screen readers.</p>
-            
+            <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
+            <p>My favourite tag is &lt;main&gt;, because it tells the browser where the important content is &amp; helps
+                screen readers.</p>
+
             <h3>Hear my introduction</h3>
             <audio controls>
                 <source src="media/intro.mp3" type="audio/mpeg">
@@ -108,7 +111,8 @@
                 <meter id="lvl-Java" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">30%</meter>
             </p>
 
-
+            <h3>Skill Bar Chart</h3>
+            <canvas id="chart" width="300" height="150">Skill bar chart</canvas>
             <h3>Learning Roadmap</h3>
             <ol>
                 <li>Master HTML and CSS layouts</li>
@@ -161,7 +165,8 @@
         <section id="education">
             <h2>Education</h2>
             <h3>BSc in Software Engineering</h3>
-           <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, <time datetime="2023-09">September 2023</time> – present</p>
+            <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, <time
+                    datetime="2023-09">September 2023</time> – present</p>
             <p>
                 <label for="degree">Degree progress:</label>
                 <progress id="degree" value="40" max="100">40%</progress> 40%
@@ -231,7 +236,8 @@
             <p>Phone: <a href="tel:+251980481768">+251&nbsp;9804&nbsp;81768</a></p>
             <p>GitHub: <a href="https://github.com/k1dra" target="_blank">Visit my GitHub</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/kidus-girma" target="_blank">Visit my LinkedIn</a></p>
-           <p><a href="files/CV - Kidus Girma.pdf" download>Download my Resume (<abbr title="Curriculum Vitae">CV</abbr>) (PDF)</a></p>
+            <p><a href="files/CV - Kidus Girma.pdf" download>Download my Resume (<abbr
+                        title="Curriculum Vitae">CV</abbr>) (PDF)</a></p>
 
             <h3>Connect with me</h3>
             <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email"
@@ -319,10 +325,57 @@
         </section>
     </main>
 
- <footer>
+    <footer>
         <p>&copy; 2026 Kidus Girma. All rights reserved.</p>
         <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
+    <script>
+        const canvas = document.getElementById('logo');
+        const ctx = canvas.getContext('2d');
+
+
+        ctx.fillStyle = "#1f5fa8";
+        ctx.fillRect(0, 0, 120, 120);
+
+
+        ctx.beginPath();
+        ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.fillStyle = "#1f5fa8";
+        ctx.font = "bold 36px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText("KG", 60, 62);
+
+        const chart = document.getElementById('chart');
+        const chartCtx = chart.getContext('2d');
+
+
+        chartCtx.fillStyle = "#f4f4f4";
+        chartCtx.fillRect(0, 0, 300, 150);
+
+        chartCtx.fillStyle = "#1f5fa8";
+        chartCtx.fillRect(30, 130 - 96, 50, 96);
+        chartCtx.fillStyle = "black";
+        chartCtx.font = "12px Arial";
+        chartCtx.fillText("HTML", 38, 145);
+
+
+        chartCtx.fillStyle = "#1f5fa8";
+        chartCtx.fillRect(115, 130 - 84, 50, 84);
+        chartCtx.fillStyle = "black";
+        chartCtx.fillText("Python", 120, 145);
+
+
+        chartCtx.fillStyle = "#1f5fa8";
+        chartCtx.fillRect(200, 130 - 36, 50, 36);
+        chartCtx.fillStyle = "black";
+        chartCtx.fillText("JavaScript", 195, 145);
+    </script>
+
+
 </body>
 
 </html>
